@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+{% block content %}
+
+<video src="{{url_for('static' , filename='videos/hack.mp4')}}" autoplay loop muted >
+  <source type="video" >
+</video>
+
+<div class="contanthome">
+  <!-- content-vidio -->
+<div class="content-vidio">
+  <div class="paragraph-video">
+    I turn your ideas into vibrant interactive websites .
+  </div>
+</div>
+<!-- content-vidio -->
+
+  <img class="up" style="position: absolute; top: 85vh;" src="{{url_for('static' , filename='/images/up.png')}}" alt="">
+
+<!-- contener-main -->
+<div class="contener-main">
+
+
+  <!-- work-home -->
+  <div class="work-home">
+
+      <div class="title-work-home">
+        WORK
+      </div>
+
+      <div class="all-card-work">
+       {% for card_works in card_work %}
+
+       <div class="one-card-work">
+        <img style="  background: white; border-radius: 10px; outline: 1px #FBF6F6 solid" src="{{card_works.img}}" />
+        <div class="decription-card-work">{{card_works.text}} </div>
+      </div>
+      
+       {% endfor %}
+        
+      </div>
+    
+  </div>
+  <!-- work-home -->
+
+  <!-- paragraph -->
+  <div class="paragraph">
+    <div >
+      <p>From idea to intreraction... it All Start Here</p>
+    </div>
+  </div>
+  <!-- paragraph -->
+
+  <!-- may-server-home -->
+  <div class="may-server-home">
+    <div class="title_serves">My services</div>
+    <div class="menu-serves">
+
+      <div class="card-lang">
+        <div style=" color: #FBF6F6; font-size: 20px; font-family: Space Grotesk; font-weight: 400; line-height: 24px; ">FrontEnd</div>
+        <div class="icon-daown" ><img src="{{url_for('static' , filename='/images/drop.png')}}" alt=""></div>
+      </div>
+
+      <div class="content-one">
+        <div class="content-on-daown" >
+          <div class="title-content-one">
+            <p>Languages</p>
+          </div>
+          <div class="is-lang">
+            {% for card_lang in card_langs %}
+            <div class="lang-one">
+              <img src="{{card_lang}}" alt="">
+            </div>
+            {% endfor %}
+          </div>  
+          <p style="color: rgb(210, 210, 210); position: relative; bottom: 5px; right: 5px;">more..</p>
+    
+      </div>
+
+    </div>
+
+
+      <div class="card-lang" >
+        <div style=" color: #FBF6F6; font-size: 20px; font-family: Space Grotesk; font-weight: 400; line-height: 24px; ">Back-End</div>
+        <div class="icon-daown" ><img src="{{url_for('static' , filename='/images/drop.png')}}" alt=""></div>
+      </div>
+
+      <div class="content-one">
+        <div class="content-on-daown" >
+          <div class="title-content-one">
+            <p>Languages</p>
+          </div>
+          <div class="is-lang">
+            <div class="lang-one">
+              <img src="{{url_for('static' , filename='/images/pythonIMG.svg')}}" alt="">
+            </div>
+
+            <div class="lang-one">
+              <img src="{{url_for('static' , filename='/images/javaIMG.svg')}}" alt="">
+            </div>
+
+            
+          </div>  
+      </div>
+    </div>
+
+
+      <div class="card-lang">
+        <div style=" color: #FBF6F6; font-size: 20px; font-family: Space Grotesk; font-weight: 400; line-height: 24px; ">Bata-base</div>
+        <div class="icon-daown" ><img src="{{url_for('static' , filename='/images/drop.png')}}" alt=""></div>
+      </div>
+
+      <div class="content-one">
+        <div class="content-on-daown" >
+          <div class="title-content-one">
+            <p>Database Systems</p>
+          </div>
+          <div class="is-lang">
+            <div class="lang-one">
+              <img src="{{url_for('static' , filename='/images/mysqlimg.svg')}}" alt="">
+            </div>
+
+            <div class="lang-one">
+              <img src="{{url_for('static' , filename='/images/postgres.svg')}}" alt="">
+            </div>
+
+            <div class="lang-one">
+              <img src="{{url_for('static' , filename='/images/firebaseimg.svg')}}" alt="">
+            </div>
+          </div>  
+      </div>
+
+
+
+    
+
+
+        
+
+      
+
+    
+
+    </div>
+    
+
+    <a href="{{url_for('serves')}}"><div class="btn-fo-daown">
+      <div style="color: #FBF6F6; font-size: 20px; font-family: Space Grotesk; font-weight: 400; line-height: 24px; word-wrap: break-word">Se more...</div>
+    </div></a>
+
+  </div>
+  <!-- may-server-home -->
+
+  
+  <!-- display-img-home -->
+  <div class="all-card" style=" height: 600px; position: relative">
+    <img class="sercle-img"  src="{{url_for('static' , filename='/images/abstractg.png')}}" />
+    
+    <div class="ent-all-card">
+      <div id="card-1" class="card-hover-color left" >
+        <p>🖌️ Modren Interface Design</p>
+        <p>I create clean, responsive interfaces that work seamlessly across all devices.</p>
+        <img class="imageicondesing"  src="{{url_for('static' , filename='/images/imageIconDesings.png')}}" alt="">
+      </div>
+      <div id="card-2" class="card-hover-color center" >
+        <p>💻 Dynamic Website </p>
+        <p>I use the latest technologies to build fast and interactive websites.</p>
+        <img class="imageicondesing"  src="{{url_for('static' , filename='/images/devlopmenticon.png')}}" alt="">
+      </div>      
+      <div id="card-3" class="card-hover-color right" >
+        <p>🧬 Smart Admin Panel Design</p>
+        <p>I build intuitive and secure admin panels to manage users, content, and settings with ease.</p>
+        <img class="imageicondesing"  src="{{url_for('static' , filename='/images/dachboardicon.png')}}" alt="">
+      </div>
+
+      <img onclick="goLeft()" class="move_left" src="{{url_for('static' , filename='/images/arrow_back.svg')}}" alt="">
+      <img onclick="goRight()" class="move_right"  src="{{url_for('static' , filename='/images/arrow_move.svg')}}" alt="">
+    </div>
+
+  </div>
+  <!-- display-img-home -->
+
+  <!-- Customer-testimonials -->
+  <div class="Customer-testimonials">
+    <div class="title-customer-testimonials">
+      <div ><p style="font-family: Space Grotesk;">Client voices</p></div>
+    </div>
+     
+    
+    <div class="card-Customer-testimonials">
+      {% for card_casts in card_cast %}
+      <div class="one-card-Customer-testimonials" >
+        <div class="ent-content-customer" >
+          <img style="width: 60px; height: 60px; background: rgba(255, 255, 255, 0.10); border-radius: 9999px; outline: 2px #471F7A solid; backdrop-filter: blur(25px)" src="{{card_casts.img1}}" />
+          <div style="font-family: Short Stack;font-size: 16px;"  class="description-customer">{{card_casts.p}}</div>
+          <div style="  align-items: center; display: inline-flex"><img src="{{card_casts.img2}}" alt=""></div>
+        </div>
+      </div>
+    {% endfor %}
+
+
+      <div  class="one-card-Customer-testimonials" id="display">
+        <div class="ent-content-customer">
+          <img style="width: 60px; height: 60px; background: rgba(255, 255, 255, 0.10); border-radius: 9999px; outline: 2px #471F7A solid; backdrop-filter: blur(25px)" src="{{url_for('static' , filename='/images/kahl.png')}}" /> 
+          <div style="font-family: Short Stack;font-size: 16px;" class="description-customer">"Thank you for the professional execution of the project. It was a pleasure working with you, and I'll definitely come back for future projects."</div>
+          <div style="  align-items: center; display: inline-flex"><img src="{{url_for('static', filename='/images/starticon.png')}}" alt=""></div>
+        </div>
+      </div>
+
+
+      
+    </div>
+  </div>
+  <!-- Customer-testimonials -->
+</div>
+<!-- contener-main -->
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,157 @@
+.header {
+  position: absolute;
+  top: 1rem;
+  left: 9%;
+  z-index: 2;
+  width: 80%;
+}
+a {
+  color: unset;
+}
+.ico_list {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+}
+.list_icon {
+  z-index: 2;
+  visibility: hidden;
+}
+.content_list_grid {
+  padding: 7px 42px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  outline: 2px #471f7a solid;
+  backdrop-filter: blur(25px);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.list_grid {
+  color: white;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  display: flex;
+}
+.word_list {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  color: #fbf6f6;
+  font-size: 20px;
+  font-family: Space Grotesk;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+/* الحواسيب متوسطة*/
+@media (max-width: 1024px) {
+   .all-card .sercle-img {
+    width: 100%;
+    position: absolute;
+  } 
+  .paragraph {
+    width: 67%;
+    text-align: center;
+    
+  }
+}
+/* tablat */
+@media (max-width: 770px) {
+
+}
+/* هواتف متوسطة*/
+@media (max-width: 600px) {
+  .ico_list {
+    align-items: unset;
+    z-index: 10;
+  }
+  .list_icon {
+    position: fixed;
+    top: 1rem;
+    right: 7%;
+    visibility: visible;
+  }
+  .content_list_grid {
+    height: 100vh;
+    width: 82%;
+    position: fixed;
+    border-radius: 30px 0 0 30px;
+    top: 0;
+    right: -90%;
+    transition: all 0.5s ease-out;
+  }
+  .list_grid {
+    display: grid;
+    gap: 50px;
+  }
+  #menu-btn:checked ~ .content_list_grid {
+    right: 0;
+  }
+  .homewo,
+  .Serviceswo,
+  .Aboutwo {
+    color: white;
+    font-size: 38px;
+    margin: 10px;
+  }
+  .paragraph-video {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .all-card-work {
+    display: grid;
+    gap: 3rem 1.2rem;
+  }
+  .paragraph {
+    padding: 0;
+    width: 86%;
+    font-weight: 200;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 1.5;
+    font-family: Space Grotesk;
+  }
+  .title-work-home,
+  .title_serves {
+    font-size: 39px;
+  }
+  .title-customer-testimonials {
+    font-size: 39px;
+  }
+  .menu-serves {
+    gap: 1rem;
+  }
+  .content-on-daown {
+    position: relative;
+    bottom: 8px;
+  }
+
+}
+
+
+
+/* الهواتف صغيرة */
+@media (max-width: 320px) {
+  .list_grid {
+    display: grid;
+    gap: 30px;
+  }
+  .homewo,
+  .Serviceswo,
+  .Aboutwo {
+    color: white;
+    font-size: 31px;
+    margin: 10px;
+  }
+  /* .title-customer-testimonials {
+    font-size: 27px;
+
+  } */
+}

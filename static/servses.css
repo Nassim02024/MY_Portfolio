@@ -1,0 +1,160 @@
+#Xl {
+  font-size: 39px;
+  font-family: Space Grotesk;
+  font-weight: 400;
+}
+
+.content_servers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+.content_serves_main {
+  width: 80%;
+  position: relative;
+  top: 6.25rem;
+  padding-bottom: 12.25rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 6.25rem;
+}
+.content_serves_main .title,
+.content_serves_main .prograses,
+.section .name {
+  width: fit-content;
+  margin: auto;
+}
+.prograses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6.25rem;
+  color: whitesmoke;
+  text-align: center;
+}
+.dis_prog {
+  font-size: 20px;
+}
+
+.mains1,
+.mains2,
+.mains3,
+.mains4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.31rem;
+  width: 70%;
+  margin: auto;
+  position: relative;
+  bottom: 1.5rem;
+}
+.mains5 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: auto;
+  width: 70%;
+}
+.mains5 p {
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(251, 246, 246, 0.212);
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+.lang_in_card {
+  font-size: 25px;
+  font-family: Space Grotesk;
+}
+.framework :nth-child(1) {
+  margin: 6px 0;
+  align-self: stretch;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-family: Space Grotesk;
+  font-weight: 400;
+  line-height: 19.2px;
+  word-wrap: break-word;
+}
+.framework {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+  font-size: 16px;
+  font-family: Space Grotesk;
+  font-weight: 400;
+  line-height: 19.2px;
+  word-wrap: break-word;
+}
+.one_card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.18rem;
+  padding: 24px;
+  background: rgba(251, 246, 246, 0.212);
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.one_card .heade {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .content_serves_main {
+    width: 90%;
+  }
+  .prograses {
+    gap: 2.25rem;
+  }
+  .mains1,
+  .mains2,
+  .mains3,
+  .mains4 {
+    width: 100%;
+  }
+  .one_card .heade {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .heade img {
+    width: 70%;
+  }
+  .mains5 {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .mains1, .mains2, .mains3, .mains4{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .heade img {
+    width: 38%;
+}
+}
+@media (max-width: 485px) {
+  .prograses {
+    gap: 1rem;
+  }
+  .mains5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #Xl {
+    font-size: 36px;
+  }
+  .paragraph-video {
+    width: 99%;
+  }
+}
