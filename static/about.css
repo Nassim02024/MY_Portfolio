@@ -1,0 +1,133 @@
+body {
+  background-color: black;
+  width: 100%;
+}
+
+.content-about {
+  min-height: 70vh;
+  position: relative;
+  padding: 40px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.background-about {
+  background-attachment: fixed;
+  background-image: url("./images/backGround-about.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  margin: auto;
+}
+
+.content-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 150px;
+  padding: 9.3rem 0;
+}
+.contanet-iam {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  gap: 1rem;
+}
+.contanet-iam img{
+  width: 80%;
+  
+}
+.description-about {
+  text-align: center;
+  color: #fbf6f6;
+  font-size: 25px;
+  font-family: Space Grotesk;
+  font-weight: 400;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+.contanet-ido,
+.contanet-mission,
+.contanet-goals {
+  display: grid;
+  text-align: center;
+  gap: 24px;
+  width: 65%;
+}
+
+.title-about {
+  color: #fbf6f6;
+  font-size: 39px;
+  font-family: Space Grotesk;
+  font-weight: 400;
+  line-height: 46.8px;
+  word-wrap: break-word;
+}
+.word-iam {
+  color: #fbf6f6;
+  font-size: 25px;
+  font-family: Space Grotesk;
+  font-weight: 400;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+
+@media (max-width: 786px) {
+  .contanet-iam {
+    width: 90%;
+  }
+  .contanet-iam img {
+    width: 100%;
+  }
+}
+@media (max-width: 690px) {
+  
+  .word-iam {
+    font-size: 19px;
+  }
+  .contanet-iam {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contanet-iam img {
+    width: 100%;
+  }
+  .contanet-ido,
+.contanet-mission,
+.contanet-goals {
+
+  width: 90%;
+
+}
+}
+/* @media (max-width: 529px) {
+  
+} */
+
+@media (max-width: 425px) {
+  .contanet-iam {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contanet-iam img {
+    width: 100%;
+  }
+  .content-about {
+    gap: 95px;
+  }
+}
+
+@media (max-width: 376px) {
+  .title-about {
+    font-size: 29px;
+  }
+  .description-about {
+    font-size: 15px;
+  }
+}
